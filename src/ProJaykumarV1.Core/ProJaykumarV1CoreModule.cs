@@ -36,8 +36,6 @@ namespace ProJaykumarV1
 
             Configuration.Settings.Providers.Add<AppSettingProvider>();
             
-            Configuration.Localization.Languages.Add(new LanguageInfo("fa", "فارسی", "famfamfam-flags ir"));
-            
             Configuration.Settings.SettingEncryptionConfiguration.DefaultPassPhrase = ProJaykumarV1Consts.DefaultPassPhrase;
             SimpleStringCipher.DefaultPassPhrase = ProJaykumarV1Consts.DefaultPassPhrase;
         }
