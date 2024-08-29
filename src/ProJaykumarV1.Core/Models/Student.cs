@@ -9,7 +9,7 @@ namespace ProJaykumarV1.Models
         public Student()
         {
             this.IsActive = true;
-            this.CreationTime = DateTime.UtcNow;
+            this.CreationTime = DateTime.Now;
         }
 
         public string FirstName { get; set; }
