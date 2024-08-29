@@ -26,6 +26,7 @@ namespace ProJaykumarV1.Web.Host.Startup
 
         public override void PreInitialize()
         {
+            Configuration.BackgroundJobs.IsJobExecutionEnabled = false;
             System.AppContext.SetSwitch("NpgSql.DisableDateTimeInfinityConversions", true);
             System.AppContext.SetSwitch("NpgSql.EnableLegecyTimestampBehavior", true);
         }
