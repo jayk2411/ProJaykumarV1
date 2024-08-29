@@ -3,6 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using ProJaykumarV1.Authorization.Roles;
 using ProJaykumarV1.Authorization.Users;
 using ProJaykumarV1.MultiTenancy;
+using ProJaykumarV1.Models;
 
 namespace ProJaykumarV1.EntityFrameworkCore
 {
@@ -23,5 +24,7 @@ namespace ProJaykumarV1.EntityFrameworkCore
                 .Property(p => p.Value)
                 .HasMaxLength(100);
         }
+
+        public virtual DbSet<Student> Students { get; set; }
     }
 }
